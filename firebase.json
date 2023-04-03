@@ -1,0 +1,36 @@
+{
+  "emulators": {
+    "auth": {
+      "port": 1234
+    },
+    "ui": {
+      "enabled": true,
+      "port": 2345
+    },
+    "singleProjectMode": true,
+    "hosting": {
+      "port": 3456
+    }
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
