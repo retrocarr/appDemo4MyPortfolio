@@ -87,8 +87,8 @@ function PostsSmallView() {
       {/* check if there are any posts */}
       {(posts.length > 0) ?
         <span className="allPostsHeader">
-          <h3>All Posts</h3>
-          <h3> {posts.length} Posts</h3>
+          <h5>All Posts</h5>
+          <h5> ({posts.length})</h5>
         </span> : <h1 id="noPostsHeader">No posts yet</h1>
       }
 

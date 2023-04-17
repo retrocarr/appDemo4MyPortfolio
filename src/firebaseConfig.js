@@ -5,13 +5,14 @@ import { doc, getDocs, deleteDoc, getFirestore, collection, setDoc, updateDoc } 
 
 /* #region  initialize app */
 const firebaseConfig = {
-    apiKey: "AIzaSyCCjgsuK1o7KUFJjGlQG51mUIb3rq9n2J8",
-  authDomain: "infection-control-85b74.firebaseapp.com",
-  projectId: "infection-control-85b74",
-  storageBucket: "infection-control-85b74.appspot.com",
-  messagingSenderId: "891711434757",
-  appId: "1:891711434757:web:92abb489da96f16c212c6c",
-  measurementId: "G-HNVCL2YEQ4"
+  apiKey: "AIzaSyDqfroQMI18BvDXHVCXblUNebiIXvQ7O10",
+  authDomain: "border-control-66718.firebaseapp.com",
+  databaseURL: "https://border-control-66718-default-rtdb.firebaseio.com",
+  projectId: "border-control-66718",
+  storageBucket: "border-control-66718.appspot.com",
+  messagingSenderId: "144293640895",
+  appId: "1:144293640895:web:0eb6e96f6903a37286240a",
+  measurementId: "G-XMQJEG80EW"
 };
 const app = initializeApp(firebaseConfig);
 /* #endregion */

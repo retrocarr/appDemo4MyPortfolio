@@ -172,7 +172,8 @@ nav {
   }
 
   h1#displayedHeader{
-    margin:1em 0;
+    margin: .2em 0;
+    font-size: x-large;
   }
 
   p {
@@ -217,7 +218,7 @@ nav {
 
   h2 {
     font-size: large;
-    margin: .2em 0;
+    margin: 1em 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -276,7 +277,6 @@ nav {
     min-width: 50px;
     min-height: 25px;
     margin: .5em 0;
-    border: 2px solid #80808050;
     padding: .2em;
     border-radius: .2em;
   }
@@ -440,10 +440,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   .loginForm {
     box-shadow: 1px 3px 100px grey;
-    padding: 2em 1.2em .3em;
+    padding: 2em 1.2em 1em;
     background-color: #f5e4c6;
     border: 3px solid #a89c88;
     border-radius: .6em;
@@ -493,11 +494,25 @@ nav {
       border-radius: 0 1em .5em 0;
 
       &:hover {
-        background-color: lightgoldenrodyellow;
+        background-color: #ffe7a3;
         cursor: pointer;
       }
     }
   }
+
+  .demoLoginBtn{
+    border-radius: 10px !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#note{
+  background-color: #ff000960;
+  border: 2px solid #ff000960;
+  padding: .4em;
+  border-radius: .2em;
+  margin: .5em 0;
 }
 
 /* #endregion */

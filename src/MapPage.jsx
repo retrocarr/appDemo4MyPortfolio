@@ -65,7 +65,7 @@ function UserMarker({ cordinationsObject, email }) {
         <Post key={post.id} post={post} />
       })
         if (mappedMarkerData.length > 0) {
-          setMarkerStateIcon(bacteriaIcon)
+          setMarkerStateIcon(null)
         } else {
           setMarkerPosts(null)
         }
@@ -135,7 +135,7 @@ function MapSection() {
       <GoogleMap
         zoom={9}
         maxZoom={1}
-        center={{ lat: 30.517318, lng: 47.758834 }}
+        center={{ lat: 39.10203229114012, lng: -94.58417716719654 }}
         mapContainerClassName='map'
       >
         {markersArray}

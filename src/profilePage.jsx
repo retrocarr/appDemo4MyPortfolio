@@ -18,11 +18,25 @@ export default function ProfilePage(){
   return(
     <div className="profilePage">
       <div className="profileView">
-        <h2>ID:               <span>{userObject.userId}</span></h2>
-        <p>Institution:       <span>{userObject.institution}</span></p>
-        <p>Institution email: <span>{userObject.institutionEmail}</span></p>
-        <p>lat :              <span>{cords.lat}</span></p>
-        <p>lng:               <span>{cords.lng}</span></p>
+        {
+          (localStorage.getItem('email') == 'Guest')?
+
+          <>
+            <h2>ID:               <span>No data, youre a guest</span></h2>
+            <p>Institution:       <span>#</span></p>
+            <p>Institution email: <span>#</span></p>
+            <p>lat :              <span>#</span></p>
+            <p>lng:               <span>#</span></p>
+          </>
+          :
+          <>
+            <h2>ID:               <span>{userObject.userId}</span></h2>
+            <p>Institution:       <span>{userObject.institution}</span></p>
+            <p>Institution email: <span>{userObject.institutionEmail}</span></p>
+            <p>lat :              <span>{cords.lat}</span></p>
+            <p>lng:               <span>{cords.lng}</span></p>
+          </>
+        }
       </div>
     </div>
   )

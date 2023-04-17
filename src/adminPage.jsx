@@ -119,7 +119,7 @@ function NewUserCard() {
             </div>
 
             <div>
-                <p>Cordinations:</p>
+                <p>Map cordinations:</p>
                 <input type='number' onChange={handleChange} ref={newLat} />
                 <input type='number' onChange={handleChange} ref={newLng} />
             </div>
@@ -129,8 +129,8 @@ function NewUserCard() {
         </div>
     )
 }
-
-function UserContainer({dbRef, userId, password, institution, institutionEmail, lat, lng, isAdmin}) {
+<div className="Info">NOTE: you cannot login with the users</div>
+function UserContainer({dbRef, userId, password, institution, institutionEmail, lat, lng}) {
     /* #region states */
     const updateBtn = useRef(null)
     /* #endregion */
@@ -229,7 +229,7 @@ function UserContainer({dbRef, userId, password, institution, institutionEmail, 
             </div>
 
             <div>
-                <p>Cordinations:</p>
+                <p>Map cordinations:</p>
                 <input ref={latInput} type="number" defaultValue={lat} onChange={handleChange} />
                 <input ref={lngInput} type="number" defaultValue={lng} onChange={handleChange} />
             </div>
